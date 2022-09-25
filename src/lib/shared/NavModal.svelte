@@ -1,5 +1,6 @@
 <script type="text/javascript">
     import Socials from '$lib/shared/socials.svelte'
+    import Footer from '$lib/shared/footer.svelte'
     import { slide } from 'svelte/transition';
     export let showModal = false
 
@@ -8,7 +9,7 @@
 </script>
 
 {#if showModal }
-<div class="background" transition:slide="{{duration: 500 }}">
+<div class="background" transition:slide="{{duration: 1000 }}">
     <div class="modal" >
         <div class="top">
             <a class="logo" href="/" on:click|self><img src="../../images/logo.png"></a>
@@ -19,13 +20,17 @@
                 <li><a href="/profile" on:click|self>PROFILE</a></li>
                 <li><a href="/discography" on:click|self>DISCOGRAPHY</a></li>
                 <li><a href="/gallery" on:click|self>GALLERY</a></li>
+                <li><a href="/" on:click|self>STORE</a></li>
+
 
             </ul>
         </div>
         <footer>
-            <Socials/>
-            <p>Dreamcatcher Website by <a href={"#"}>BUHLEBETHU MKHONTA</a></p> 
+            <Footer />
+            
         </footer>
+        
+          
         
     </div>
 </div>
@@ -36,7 +41,8 @@
         width: 100%;
         height: 100%;
         position: fixed;
-        background:rgba(0,0,0,0.9);
+        background:rgba(0,0,0,0.95);
+        z-index: 3;
     }
   .modal{
         padding: 10px;
@@ -83,16 +89,16 @@
     }
      .links ul li a::before{
         content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  border-radius: 4px;
-  background-color:  var(--dream-yellow);
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color:  var(--dream-yellow);
+        bottom: 0;
+        left: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform .3s ease-in-out;
 
      }
     .links ul li a:hover::before{
@@ -104,17 +110,11 @@
     footer{
         position: absolute;
         bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
         width: 100%;
+        left:0;
 
     }
-    footer p{
-        margin-right: 25px;
-        font-size: 15px;
-    }
+    
 
 
 @media only screen and (max-width: 480px) {

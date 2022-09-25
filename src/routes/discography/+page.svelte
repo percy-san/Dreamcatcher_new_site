@@ -2,8 +2,14 @@
 	
 </script>
 
-<h1>Disc</h1>
+<main>
+	
+</main>
 
 <style type="text/css">
+	main{
+		height: 100vh;
+	}
+
 	
 </style>

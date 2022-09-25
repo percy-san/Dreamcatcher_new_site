@@ -26,5 +26,11 @@
 	i:hover{
 		color: var(--dream-yellow);
 	}
+	  @media only screen and (max-width: 480px) {
+	  	i{
+	  		font-size: 15px;
+	  	}
+    
+  }
 	
 </style>

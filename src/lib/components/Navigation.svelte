@@ -10,7 +10,6 @@
 	const toggleModal = () =>{
 		showModal = !showModal
 		
-		console.log(showModal)
 	}
 
 	
@@ -20,7 +19,7 @@
 
 <NavModal {showModal} on:click={toggleModal} />
 <nav>
-	<a class="logo" href="/"><img src="../../images/logo.png"></a>
+	<a class="logo" href="/"><img src="../../images/logo.png" alt="nav-logo"></a>
 	<div>
 		<i class="fa-solid fa-bars icon" on:click={toggleModal} class:landing-menu-icon={landing}></i>
 	</div>	
@@ -32,6 +31,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 10px 10px 5px 10px;
+		background: transparent;
 	}
 
 	.show-main-nav{

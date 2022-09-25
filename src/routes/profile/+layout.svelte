@@ -5,7 +5,9 @@
 </script>
 
 <Navigation {landing}/>
-<slot />
+<slot >
+	
+</slot>
 
 <style type="text/css">
 	
