@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  import Members from '$lib/memberStores.js'
 
+  export let disc = false
   export let items = [];
   export let activeTabValue;
 
@@ -23,7 +23,7 @@
   <div class="artist-names">
     {#each items as item}
       <p class={activeTabValue === item.value ? 'active' : ''}>
-        <span on:click={handleClick(item.value)}>{item.name}</span>
+        <span on:click={handleClick(item.value)}>{item.label}</span>
       </p>
     
     {/each}
@@ -33,12 +33,6 @@
 
 
 <style>
-  .artist-names{
-
-   
-
-  }
-
   p{
     line-height: 10px;
     font-size: 20px;
@@ -57,6 +51,7 @@
     border-color: #dee2e6 #dee2e6 #fff;
   }
 
+
   @media only screen and (max-width: 480px){
     .artist-names{
       display: flex;
@@ -65,7 +60,8 @@
      
     }
   }
-   
+
+
 
 
   

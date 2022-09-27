@@ -1,18 +1,18 @@
 <script type="text/javascript">
 	import Members from '$lib/memberStores.js'
-	import Tabs from '$lib/shared/profileTabs.svelte'
+	import Tabs from '$lib/shared/Tabs.svelte'
 	import ArtistInfo from '$lib/shared/artistInfo.svelte'
 
 	 //Object to hold the tab items that will be passed as props to
 	 //the profile tabs component
 	 let tabItems = [
-	    { name: `${$Members[0].name}`, value: 1 },
-	    { name: `${$Members[1].name}`, value: 2 },
-	    { name: `${$Members[2].name}`, value: 3 },
-	    { name: `${$Members[3].name}`, value: 4 },
-	    { name: `${$Members[4].name}`, value: 5 },
-	    { name: `${$Members[5].name}`, value: 6},
-	    { name: `${$Members[6].name}`, value: 7 }
+	    { label: `${$Members[0].name}`, value: 1 },
+	    { label: `${$Members[1].name}`, value: 2 },
+	    { label: `${$Members[2].name}`, value: 3 },
+	    { label: `${$Members[3].name}`, value: 4 },
+	    { label: `${$Members[4].name}`, value: 5 },
+	    { label: `${$Members[5].name}`, value: 6},
+	    { label: `${$Members[6].name}`, value: 7 }
 
   	];
 	let currentTab;
