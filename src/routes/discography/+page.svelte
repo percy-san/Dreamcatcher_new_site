@@ -19,12 +19,7 @@ const AlbumList = [
 	{id:14, name:'Alone in the city', date:'September 20, 2018 ', cover:"Alone_In_The_City.jpg" },
   	{id:15, name:'Prequel', date:'July 27, 2017', cover:"Prequel.jpg" },
   	{id:16, name:'Fall Asleep in the Mirror',date:'April 5, 2017',cover:"Fall_Asleep_In_The_Mirror.png"},
-  	{id:17, name:'Nightmare', date:'January 13, 2017', cover:"Nightmare.png"}
-  	
-  	
-  	
-  	
-  	
+  	{id:17, name:'Nightmare', date:'January 13, 2017', cover:"Nightmare.png"}	
 ];
 
 

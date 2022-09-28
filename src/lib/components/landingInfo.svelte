@@ -22,7 +22,7 @@
 		height: 25rem;
 
 	}
-	.right h1, h3,h4,h2{
+	.right h1,h4,h2{
 		color: white;
 		margin-top: -10px;
 		

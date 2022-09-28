@@ -2,7 +2,7 @@
 	export let cover = ""
 	export let albumName =""
 	export let releaseDate = ""
-	export let id =""
+	
 	
 </script>
 

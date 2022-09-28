@@ -20,7 +20,7 @@
                 <li><a href="/profile" on:click|self>PROFILE</a></li>
                 <li><a href="/discography" on:click|self>DISCOGRAPHY</a></li>
                 <li><a href="/gallery" on:click|self>GALLERY</a></li>
-                <li><a href="/" on:click|self>STORE</a></li>
+                <li><a href="/notice" on:click|self>NOTICES</a></li>
 
 
             </ul>
