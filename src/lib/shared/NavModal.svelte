@@ -17,10 +17,12 @@
         </div>
         <div class="links">
             <ul>
+                <li><a href="/" on:click|self>HOME</a></li>
                 <li><a href="/profile" on:click|self>PROFILE</a></li>
                 <li><a href="/discography" on:click|self>DISCOGRAPHY</a></li>
-                <li><a href="/gallery" on:click|self>GALLERY</a></li>
                 <li><a href="/notice" on:click|self>NOTICES</a></li>
+                <li><a href="https://dreamcatcher.kr/" on:click|self target="_blank">STORE</a></li>
+                
 
 
             </ul>

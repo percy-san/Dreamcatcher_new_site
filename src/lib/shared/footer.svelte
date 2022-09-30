@@ -14,6 +14,7 @@
 
 <style type="text/css">
 	footer{
+		
 		display: flex;
 		align-items: center;
 		justify-content: space-between;

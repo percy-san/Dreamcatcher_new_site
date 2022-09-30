@@ -3,6 +3,8 @@
 	import Tabs from '$lib/shared/Tabs.svelte'
 	import ArtistInfo from '$lib/shared/artistInfo.svelte'
 
+	
+
 	 //Object to hold the tab items that will be passed as props to
 	 //the profile tabs component
 	 let tabItems = [
@@ -16,6 +18,8 @@
 
   	];
 	let currentTab;
+
+
 
 </script>
 
@@ -68,40 +72,31 @@
 
 <style type="text/css">
 	main{
-		background-position: center;
-  		background-repeat: no-repeat;
-  		background-size: cover;
 	    padding:10px;
-	    height: 100vh;
+	    height: 100%;
 	   
 	    
 	}
 	.profile-info{
 		display: grid;
-		grid-template-columns: 0.2fr 1fr;
+		grid-template-columns: 0.2fr 1fr ;
 		grid-gap: 20px;
   		font-weight: bold;
   		z-index: 2;
   		width: 100%;
-  		height: 100%;
+  		height: 120vh;
 
   		}
   		.member-info{
   			
   		}
 
-	@media only screen and (max-width: 480px) {
+	@media only screen and (max-width: 600px) {
 		.profile-info{
 			display: grid;
 			grid-template-columns: 1fr;
 		}
 	}
-	@media only screen and (max-width: 980px){
-		.profile-info{
-			display: block;
-			margin:0 auto;
-			width: 90%;
-		}
-	}
+	
 	
 </style>

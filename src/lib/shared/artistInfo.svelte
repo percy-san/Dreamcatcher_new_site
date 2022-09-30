@@ -16,16 +16,12 @@
 
 
 <style type="text/css">
-	.artist-image{
-		
-		
-		
-	}
+	
 	.img-1{
 		display: block;
 		margin: auto;
 		width: 50%;
-		height: 37rem;
+		height: auto;
 		-webkit-box-shadow: -27px -16px 7px -2px rgba(0,0,0,0.32); 
 		box-shadow: -27px -16px 7px -2px rgba(0,0,0,0.32);
 		z-index: 0;
@@ -36,8 +32,11 @@
 
     @media only screen and (max-device-width: 480px) {
     	.img-1{
-    		width: 70%;
-    		height: 20rem;
+    		display: block;
+    		margin: 0 auto;
+    		width: 90%;
+    		height: auto;
+    		box-shadow: none;
 
     	}
     	

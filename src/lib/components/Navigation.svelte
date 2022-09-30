@@ -3,7 +3,7 @@
 	
 
 	let showModal = false
-	export let landing = true
+	
 	
 
 
@@ -18,10 +18,11 @@
 
 
 <NavModal {showModal} on:click={toggleModal} />
-<nav>
+
+<nav >
 	<a class="logo" href="/"><img src="../../images/logo.png" alt="nav-logo"></a>
 	<div>
-		<i class="fa-solid fa-bars icon" on:click={toggleModal} class:landing-menu-icon={landing}></i>
+		<i class="fa-solid fa-bars icon" on:click={toggleModal} ></i>
 	</div>	
 </nav>
 
@@ -30,8 +31,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 10px 10px 5px 10px;
-		background: transparent;
+		padding: 20px;
+		background: black;
+		margin-bottom: 20px;
+		
+
 	}
 
 	.show-main-nav{
@@ -43,7 +47,7 @@
 
 	.icon{
 		font-size: 25px;
-		color: black;
+		color: white;
 		padding-right:10px;
 		transition: 0.2s ease-in-out; 
 	}

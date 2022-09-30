@@ -38,25 +38,28 @@
     font-size: 20px;
     cursor: pointer;
     position: relative;
-    text-align: right;
+    padding-left: 15px;
+   
 
   }
   p:hover{
-    font-size: 20px;
+    color: var(--dream-yellow);
   }
    
     p.active > span {
     color:var(--dream-yellow);
-    background-color: #fff;
-    border-color: #dee2e6 #dee2e6 #fff;
+    font-weight: bold;
+    
   }
 
 
   @media only screen and (max-width: 480px){
     .artist-names{
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap:10px;
+      
      
     }
   }

@@ -27,6 +27,9 @@ const AlbumList = [
 
 	
 </script>
+<svelte:head>
+	<title>Discography</title>
+</svelte:head>
 
 <h1 class="page-header">Discography</h1>
 	<div class="albums-section" >
